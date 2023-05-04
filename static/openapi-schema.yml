@@ -1,0 +1,38 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  news:
+    # ID новости - уникальный идентификатор новости
+    # title - заголовок новости
+    # text - текст новости
+    # rating_news - рейтинг новости
+    # is_active - признак того, активна ли новость в данный момент
+    - id: integer
+      title: string
+      text: string
+      rating_news: integer
+      is_active: boolean
+
+  post:
+    # ID поста - уникальный идентификатор поста
+    # author_post - ID автора поста
+    # post_news - тип поста (PO - пост, NE - новость)
+    # date_in - дата создания поста
+    # title - заголовок поста
+    # text - текст поста
+    # rating_news - рейтинг поста
+    # is_active - признак того, активен ли пост в данный момент
+    # categories - список категорий, к которым относится пост
+    - id: integer
+      author_post: integer
+      post_news: string
+      date_in: datetime
+      title: string
+      text: string
+      rating_news: integer
+      is_active: boolean
+      categories:
+        - id: integer
+          name: string
