@@ -5,7 +5,7 @@ from django.template.loader import render_to_string
 
 from .models import Category, Post
 from django.core.mail import EmailMultiAlternatives
-
+from django.utils.translation import gettext as _
 
 @shared_task
 def send_email_task(pk):
@@ -51,7 +51,7 @@ def week_send_email_task():
         }
     )
     msg = EmailMultiAlternatives(
-        subject='Статьи за неделю',
+        subject=_('Articles for the week'),
         body='',
         from_email=settings.DEFAULT_FROM_EMAIL,
         bcc=subscribers

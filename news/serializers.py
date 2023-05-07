@@ -12,10 +12,3 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
    class Meta:
        model = Post
        fields = ['id', 'grade', ]
-
-
-'''class StudentSerializer(serializers.HyperlinkedModelSerializer):
-   class Meta:
-       model = Student
-       fields = ['id', 'name', ]
-'''

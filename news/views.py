@@ -35,34 +35,6 @@ def upgrade_me(request):
     return redirect('/news/')
 
 
-'''class PostList(LoginRequiredMixin, ListView):
-    model = Post
-    ordering = ['-date_in']
-    template_name = 'news.html'
-    context_object_name = 'post_news'
-    paginate_by = 50
-
-    def get_context_data(self, **kwargs):  # забираем отфильтрованные объекты переопределяя метод get_context_data у наследуемого класса
-        context = super().get_context_data(**kwargs)
-        context['filter'] = PostFilter(self.request.GET, queryset=self.get_queryset())  #вписываем фильтр в контекст
-        context['categories'] = Category.objects.all()
-        context['form'] = PostForm()
-        context['is_not_author'] = not self.request.user.groups.filter(name='authors').exists()
-        context = {
-            'current_time': timezone.now(),
-            'timezones': pytz.common_timezones  # добавляем в контекст все доступные часовые пояса
-        }
-        return context
-
-    def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)  # создаём новую форму, забиваем в неё данные из POST-запроса
-
-        if form.is_valid():  # если пользователь ввёл всё правильно и нигде не ошибся, то сохраняем новый пост
-            form.save()
-
-        return super().get(request, *args, **kwargs)'''
-
-
 class PostList(LoginRequiredMixin, ListView):
     model = Post
     ordering = ['-date_in']
@@ -86,13 +58,9 @@ class PostList(LoginRequiredMixin, ListView):
 
         return context
 
-    def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)
-
-        if form.is_valid():
-            form.save()
-
-        return super().get(request, *args, **kwargs)
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('post_list')
 
 
 class PostDetail(LoginRequiredMixin, DetailView):
@@ -124,6 +92,17 @@ class PostCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):  
         send_email_task.delay(post.pk)
         return super().form_valid(form)
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form'] = self.form_class()
+        context['current_time'] = timezone.now()
+        context['timezones'] = pytz.common_timezones
+        return context
+
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('post_add')
+
 
 class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):   # редактирование поста
     permission_required = 'news.change_post'
@@ -135,8 +114,12 @@ class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):  
         id = self.kwargs.get('pk')
         return Post.objects.get(pk=id)
 
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('post_edit')
 
 # дженерик для удаления поста
+
 class PostDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     permission_required = 'news.delete_post'
     model = Post
@@ -160,7 +143,13 @@ class PostSearch(ListView):   #поиск поста
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['filterset'] = self.filterset
+        context['current_time'] = timezone.now()
+        context['timezones'] = pytz.common_timezones
         return context
+
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('post_search')
 
 
 class BaseRegisterView(CreateView):
@@ -191,7 +180,7 @@ def subscribe(request, pk):
     user = request.user
     category = Category.objects.get(id=pk)
     category.subscribers.add(user)
-    message = 'вы подписались на категорию: '
+    message = _('you have subscribed to the category: ')
     return render(request, 'subscribe.html', {'category': category, 'message': message})
 
 
@@ -200,7 +189,7 @@ def unsubscribe(request, pk):
     user = request.user
     category = Category.objects.get(id=pk)
     category.subscribers.remove(user)
-    message = 'отписка от категории: '
+    message = _('unsubscribe from a category: ')
     return render(request, 'subscribe.html', {'category': category, 'message': message})
 
 
@@ -221,35 +210,3 @@ class PostViewset(viewsets.ModelViewSet):
        instance.is_active = False
        instance.save()
        return Response(status=status.HTTP_204_NO_CONTENT)
-
-
-'''class StudentViewest(viewsets.ModelViewSet):
-   queryset = Student.objects.all()
-   serializer_class = StudentSerializer
-   '''
-
-
-
-
-
-'''class Index(View):
-    def get(self, request):
-        current_time = timezone.now()
-
-         #.  Translators: This message appears on the home page only
-        models = MyModel.objects.all()
-
-        context = {
-            'models': models,
-            'current_time': timezone.now(),
-            'timezones': pytz.common_timezones  # добавляем в контекст все доступные часовые пояса
-        }
-
-        return HttpResponse(render(request, 'default.html', context))
-
-     #по пост-запросу будем добавлять в сессию часовой пояс, который и будет обрабатываться написанным нами ранее middleware
-    def post(self, request):
-        request.session['django_timezone'] = request.POST['timezone']
-        return redirect('/')
-        '''
-

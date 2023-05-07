@@ -4,7 +4,7 @@ from django.contrib.auth.views import LoginView, LogoutView
 from .views import upgrade_me, CategoryListView, subscribe, unsubscribe
 
 urlpatterns = [
-    path('', PostList.as_view()),
+    path('', PostList.as_view(), name='post_list'),
     path('<int:pk>', PostDetail.as_view(), name='post_detail'),
     path('create/', PostCreateView.as_view(), name='post_add'),
     path('edit/<int:pk>', PostUpdateView.as_view(), name='post_edit'),

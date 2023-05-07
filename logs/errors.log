@@ -230,3 +230,721 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
 django.template.exceptions.TemplateDoesNotExist: swagger-ui.html
 2023-05-03 19:22:47 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /swagger-ui/ HTTP/1.1" 500 78136
+2023-05-06 20:06:06 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 167, in get_context_data
+    context['form'] = self.form_class()  # создаем экземпляр формы, чтобы передать в контекст
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'PostSearch' object has no attribute 'form_class'
+2023-05-06 20:06:06 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 78997
+2023-05-06 20:06:10 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 167, in get_context_data
+    context['form'] = self.form_class()  # создаем экземпляр формы, чтобы передать в контекст
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'PostSearch' object has no attribute 'form_class'
+2023-05-06 20:06:10 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 78997
+2023-05-06 20:06:56 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 167, in get_context_data
+    context['form'] = self.form_class()  # создаем экземпляр формы, чтобы передать в контекст
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'PostSearch' object has no attribute 'form_class'
+2023-05-06 20:06:56 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 78997
+2023-05-06 20:07:09 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 167, in get_context_data
+    context['form'] = self.form_class()  # создаем экземпляр формы, чтобы передать в контекст
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'PostSearch' object has no attribute 'form_class'
+2023-05-06 20:07:09 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 78834
+2023-05-06 20:13:23 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 161, in get_context_data
+    context['form'] = self.form_class()  # создаем экземпляр формы, чтобы передать в контекст
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'PostSearch' object has no attribute 'form_class'
+2023-05-06 20:13:23 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 78965
+2023-05-06 20:13:34 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 161, in get_context_data
+    context['form'] = self.form_class()  # создаем экземпляр формы, чтобы передать в контекст
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'PostSearch' object has no attribute 'form_class'
+2023-05-06 20:13:34 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 78802
+2023-05-07 10:56:37 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/templatetags/i18n.py", line 403, in do_translate
+    message_string = parser.compile_filter(bits[1])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!' from ''become an author'!'
+2023-05-07 10:56:37 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 198120
+2023-05-07 10:57:14 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2023-05-07 10:57:14 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 127301
+2023-05-07 10:57:34 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2023-05-07 10:57:34 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 127301
+2023-05-07 10:57:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/templatetags/cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 699, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 761, in args_check
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: default_if_none requires 2 arguments, 1 provided
+2023-05-07 10:57:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 272285
+2023-05-07 10:58:14 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2023-05-07 10:58:14 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 135263
+2023-05-07 10:59:22 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/search/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2023-05-07 10:59:22 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/search/ HTTP/1.1" 500 135263
+2023-05-07 10:59:23 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/templatetags/cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 699, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 761, in args_check
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: default_if_none requires 2 arguments, 1 provided
+2023-05-07 10:59:23 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 272285
+2023-05-07 11:16:02 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2023-05-07 11:16:02 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 139647
+2023-05-07 11:19:08 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/templatetags/cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+2023-05-07 11:19:08 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 230086
+2023-05-07 11:23:27 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 514, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/template/base.py", line 531, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
+2023-05-07 11:23:27 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/create/ HTTP/1.1" 500 126381

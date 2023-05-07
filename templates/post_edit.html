@@ -1,26 +1,25 @@
+{% extends 'flatpages/default.html' %}
 <!DOCTYPE html>
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% extends 'flatpages/default.html' %}</title>
+    <title>{% block title %} Onenews {% endblock title %}</title>
 
     {% load censor %}
     {% load custom_tags %}
 
-    {% block title %}
-    Onenews
-    {% endblock title %}
 
 {% block content %}
 
-<h1>изменения поста</h1>
+<h1>{% trans 'post changes' %}</h1>
     <hr>
     <form action=""
           method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit"
-        value="сохранить" />
+        value="{% trans 'save' %}" />
     </form>
 {% endblock content %}
 </head>

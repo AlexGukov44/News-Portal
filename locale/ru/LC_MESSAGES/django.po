@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-30 11:08+0000\n"
+"POT-Creation-Date: 2023-05-07 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,16 +19,203 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: news/filter.py:11
+msgid "search by date starting from"
+msgstr "поиск по дате начиная с"
 
-#: news/models.py:45
+#: news/forms.py:9 templates/post_delete.html:22
+msgid "confirm"
+msgstr "подтвердить"
+
+#: news/models.py:47
 msgid "category name"
-msgstr ""
+msgstr "категория"
 
-#: news/models.py:130
+#: news/models.py:135
 msgctxt "help text for MyModel model"
 msgid "This is the help text"
-msgstr ""
+msgstr "текст подсказки"
 
-#: news/views.py:165
-msgid "hello world"
-msgstr ""
+#: news/tasks.py:54
+msgid "Articles for the week"
+msgstr "Статьи за неделю"
+
+#: templates/category_list.html:15 templates/post_search.html:16
+msgid "All news"
+msgstr "Все новости"
+
+#: templates/category_list.html:25 templates/news.html:30
+#: templates/onenews.html:26 templates/post_search.html:31
+msgid "heading"
+msgstr "заголовок"
+
+#: templates/category_list.html:28
+msgid "category"
+msgstr "категория"
+
+#: templates/category_list.html:31 templates/news.html:32
+#: templates/onenews.html:29 templates/post_search.html:32
+msgid "date of publication"
+msgstr "дата публикации"
+
+#: templates/category_list.html:34 templates/news.html:33
+#: templates/post_search.html:33
+msgid "text"
+msgstr "текст"
+
+#: templates/category_list.html:51 templates/news.html:38
+#: templates/onenews.html:22
+msgid "Edit"
+msgstr "Редактировать"
+
+#: templates/category_list.html:53 templates/news.html:40
+#: templates/onenews.html:23
+msgid "Remove"
+msgstr "Удалить"
+
+#: templates/category_list.html:60
+msgid "subscribe"
+msgstr "подписаться"
+
+#: templates/category_list.html:62
+msgid "unsubscribe"
+msgstr "отписаться"
+
+#: templates/category_list.html:65 templates/news.html:77
+#: templates/protect/index.html:12
+msgid "become an author!"
+msgstr "станьте автором"
+
+#: templates/category_list.html:67 templates/news.html:79
+#: templates/protect/index.html:14
+msgid "you are already an author"
+msgstr "вы уже являетесь автором"
+
+#: templates/category_list.html:71 templates/news.html:83
+#: templates/post_search.html:66
+msgid "there is no news!"
+msgstr "нет никаких новостей!"
+
+#: templates/daily_post.html:6 templates/post_add_email.html:6
+msgid "notification"
+msgstr "уведомление"
+
+#: templates/daily_post.html:9
+msgid "hello! new articles for the last week"
+msgstr "привет! новые статьи за последнюю неделю"
+
+#: templates/flatpages/default.html:36
+msgid "Home"
+msgstr "Домашняя"
+
+#: templates/flatpages/default.html:39
+msgid "News"
+msgstr "Новости"
+
+#: templates/flatpages/default.html:42
+msgid "create"
+msgstr "создать"
+
+#: templates/flatpages/default.html:45
+msgid "search"
+msgstr "поиск"
+
+#: templates/flatpages/default.html:55
+msgid "Englich"
+msgstr "Русский"
+
+#: templates/news.html:22
+msgid "All news "
+msgstr "Все новости"
+
+#: templates/news.html:24
+msgid "We will inform you about more recent news a little later!"
+msgstr "О более свежих новостях мы сообщим вам чуть позже!"
+
+#: templates/news.html:31 templates/onenews.html:27
+msgid "categories"
+msgstr "категории"
+
+#: templates/news.html:61 templates/post_search.html:49
+msgid "the first"
+msgstr "первая"
+
+#: templates/news.html:66
+msgid "page"
+msgstr "страница"
+
+#: templates/news.html:66 templates/post_search.html:54
+msgid "from"
+msgstr "из"
+
+#: templates/news.html:71 templates/post_search.html:59
+msgid "past"
+msgstr "последняя"
+
+#: templates/news/login.html:11
+msgid "Log in to the system"
+msgstr "Войдите в систему"
+
+#: templates/news/login.html:27 templates/news/signup.html:11
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/news/logout.html:11
+msgid "You are logged out"
+msgstr "Вы вышли из системы"
+
+#: templates/news/signup.html:15
+msgid "Continue"
+msgstr "Продолжить"
+
+#: templates/onenews.html:30
+msgid "content"
+msgstr "содержание"
+
+#: templates/onenews.html:45
+msgid "oops! she s not here!"
+msgstr "упс! ничего нет!"
+
+#: templates/post_add.html:13
+msgid "creating a post"
+msgstr "создание записи"
+
+#: templates/post_add.html:19 templates/post_edit.html:22
+msgid "save"
+msgstr "сохранить"
+
+#: templates/post_add_email.html:9
+msgid "hello! new"
+msgstr "привет! новый"
+
+#: templates/post_add_email.html:9
+msgid "post"
+msgstr "пост"
+
+#: templates/post_add_email.html:9
+msgid "in your section"
+msgstr "в вашем разделе"
+
+#: templates/post_edit.html:15
+msgid "post changes"
+msgstr "опубликовать изменения"
+
+#: templates/post_search.html:24
+msgid "to find"
+msgstr "найти"
+
+#: templates/post_search.html:54
+msgid "Page"
+msgstr "Страница"
+
+#: templates/protect/index.html:16
+msgid "Authorized User Page"
+msgstr "Страница авторизованного пользователя"
+
+#: templates/protect/index.html:17
+msgid "personal information for each user"
+msgstr "персональная информация о пользователе"
+
+#: templates/protect/index.html:19
+msgid "Exit"
+msgstr "Выход"

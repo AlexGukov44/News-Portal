@@ -2,10 +2,11 @@ from django.forms import ModelForm, BooleanField
 from .models import Post
 from allauth.account.forms import SignupForm
 from django.contrib.auth.models import Group
+from django.utils.translation import gettext as _
 
 
 class PostForm(ModelForm):
-    check_box = BooleanField(label='подтвердить')  # добавляем галочку, или же true-false поле
+    check_box = BooleanField(label=_('confirm'))  # добавляем галочку, или же true-false поле
 
     class Meta:
         model = Post

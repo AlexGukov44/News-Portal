@@ -1,22 +1,20 @@
+{% extends 'flatpages/default.html' %}
 <!DOCTYPE html>
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% extends 'flatpages/default.html' %}</title>
+    <title>{% block title %}Post{% endblock title %}</title>
 </head>
 
 {% load censor %}
 {% load custom_tags %}
 
-{% block title %}
-Post
-{% endblock title %}
-
 {% block content %}
 <body>
-<h1>Все новости ({{ post_news.count}})</h1>
+<h1>{% trans 'All news' %} ({{ post_news.count}})</h1>
 <h3>{% current_time '%d %b %Y' %}</h3>
-<h3> {{ next_sale|default_if_none:"Чуть позже сообщим о более свежих новостях!" }}</h3>
+<h3>{{ next_sale|default_if_none:"_('We will inform you about more recent news a little later!')" }}</h3>
 <hr>
 {% if category_news_list %}
 <tr>
@@ -24,16 +22,16 @@ Post
         <thead>
         <tr>
             <th>
-                заголовок
+                {% trans 'heading' %}
             </th>
             <th>
-                категория
+                {% trans 'category' %}
             </th>
             <th>
-                дата публикации
+                {% trans 'date of publication' %}
             </th>
             <th>
-                текст
+                {% trans 'text' %}
             </th>
         </tr>
         {% for post in category_news_list %}
@@ -50,27 +48,27 @@ Post
         <td><a href="{% url 'post_detail' post.id %}">{{ post.title|censor|truncatechars:20}}</a></td>
 
         <td>
-                <p class="text-center"><a href="{% url 'post_edit' post.id %}"style="background-color:#ffffa1" ><u>Редактировать</u></a></p> <!--ссылка на редактирование поста-->
+                <p class="text-center"><a href="{% url 'post_edit' post.id %}"style="background-color:#ffffa1" ><u>{% trans 'Edit' %}</u></a></p> <!--ссылка на редактирование поста-->
 
-                <p class="text-center"><a href="{% url 'post_delete' post.id %}"style="color:red"><u> Удалить </u></a></p> <!-- добавим ссылку на удаление поста-->
+                <p class="text-center"><a href="{% url 'post_delete' post.id %}"style="color:red"><u>{% trans 'Remove' %}</u></a></p> <!-- добавим ссылку на удаление поста-->
         </td>
         </tr>
         {% endfor %}
         </thead>
     </table>
 {% if is_not_subscriber %}
-    <p class="text-center"><a href="{% url 'subscribe' category.id %}"style="background-color:green" class="btn btn-secondary btn-sm">подписаться</a></p>
+    <p class="text-center"><a href="{% url 'subscribe' category.id %}"style="background-color:green" class="btn btn-secondary btn-sm">{% trans 'subscribe' %}</a></p>
 {% else %}
-    <p class="text-center"><a href="{% url 'unsubscribe' category.id %}"style="background-color:red" class="btn btn-secondary btn-sm">отписка</a></p>
+    <p class="text-center"><a href="{% url 'unsubscribe' category.id %}"style="background-color:red" class="btn btn-secondary btn-sm">{% trans 'unsubscribe' %}</a></p>
     {% endif %}
 {% if is_not_author %}
-<button> <a href="{% url 'upgrade' %}"> стать автором!</a> </button>
+<button> <a href="{% url 'upgrade' %}">{% trans 'become an author!' %}</a> </button>
 {% else %}
-<h1>вы уже автор</h1>
+<h1>{% trans 'you are already an author' %}</h1>
 {% endif %}
 </tr>
 {% else %}
-    <h2>новостей нет!</h2>
+    <h2>{% trans 'there is no news!' %}</h2>
 {% endif %}
 {% endblock content %}
 </body>
