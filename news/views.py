@@ -99,7 +99,7 @@ class PostCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):  
         context['timezones'] = pytz.common_timezones
         return context
 
-    def post(self, request):
+    def post(self, request, **kwargs):
         request.session['django_timezone'] = request.POST['timezone']
         return redirect('post_add')
 
@@ -114,7 +114,7 @@ class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):  
         id = self.kwargs.get('pk')
         return Post.objects.get(pk=id)
 
-    def post(self, request):
+    def post(self, request, **kwargs):
         request.session['django_timezone'] = request.POST['timezone']
         return redirect('post_edit')
 

@@ -948,3 +948,178 @@ Traceback (most recent call last):
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'flatpages/default.html'> must be the first tag in the template.
 2023-05-07 11:23:27 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/create/ HTTP/1.1" 500 126381
+2023-05-07 19:16:08 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 19:16:08 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 91846
+2023-05-07 19:21:18 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 19:21:18 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 92006
+2023-05-07 19:22:23 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 19:22:23 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 92006
+2023-05-07 19:36:28 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 19:36:28 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 92033
+2023-05-07 19:40:03 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 19:40:03 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 91994
