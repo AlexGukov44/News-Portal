@@ -1,4 +1,5 @@
 import pytz
+from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView
 from requests import request, Response
 from datetime import datetime, timedelta
@@ -85,6 +86,7 @@ class PostCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):  
     template_name = 'post_add.html'
     form_class = PostForm
     model = post
+    success_url = reverse_lazy('post_add')
 
     def form_valid(self, form):
         post = form.save(commit=False)
@@ -99,9 +101,10 @@ class PostCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):  
         context['timezones'] = pytz.common_timezones
         return context
 
-    def post(self, request, **kwargs):
+    def post(self, request, *args, **kwargs):
         request.session['django_timezone'] = request.POST.get('timezone', 'UTC')
-        return redirect('post_add')
+        return super().post(request, *args, **kwargs)
+
 
 class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):   # редактирование поста
     permission_required = 'news.change_post'
