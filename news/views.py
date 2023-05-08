@@ -100,9 +100,8 @@ class PostCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):  
         return context
 
     def post(self, request, **kwargs):
-        request.session['django_timezone'] = request.POST['timezone']
+        request.session['django_timezone'] = request.POST.get('timezone', 'UTC')
         return redirect('post_add')
-
 
 class PostUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):   # редактирование поста
     permission_required = 'news.change_post'

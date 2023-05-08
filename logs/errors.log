@@ -1123,3 +1123,585 @@ Traceback (most recent call last):
     raise MultiValueDictKeyError(key)
 django.utils.datastructures.MultiValueDictKeyError: 'timezone'
 2023-05-07 19:40:03 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 91994
+2023-05-07 19:57:34 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    timezone.activate(pytz.timezone(request.POST['timezone']))
+                                    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 19:57:34 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 92050
+2023-05-07 19:58:09 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    timezone.activate(pytz.timezone(request.POST['timezone']))
+                                    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 19:58:09 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 92008
+2023-05-07 20:11:38 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/edit/30
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 118, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 20:11:38 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/edit/30 HTTP/1.1" 500 92135
+2023-05-07 20:17:22 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 20:17:22 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 92016
+2023-05-07 20:18:02 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-07 20:18:02 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 92070
+2023-05-08 07:50:13 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 110, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/news/views.py", line 103, in post
+    request.session['django_timezone'] = request.POST['timezone']
+                                         ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+2023-05-08 07:50:13 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 91865
+2023-05-08 08:11:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:11:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/create/ HTTP/1.1" 500 62177
+2023-05-08 08:14:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:14:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/create/ HTTP/1.1" 500 62177
+2023-05-08 08:14:46 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/create/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:14:46 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "POST /news/create/ HTTP/1.1" 500 63493
+2023-05-08 08:18:50 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:18:50 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:20:24 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:20:24 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:20:47 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:20:47 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:20:52 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:20:52 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:20:54 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:20:54 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 61945
+2023-05-08 08:21:32 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:21:32 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:21:35 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:21:35 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:21:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:21:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 61945
+2023-05-08 08:22:25 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:22:25 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:22:30 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:22:30 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:29:54 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:29:54 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:30:06 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:30:06 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:30:32 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:30:32 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:34:19 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:34:19 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:35:20 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:35:20 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:35:21 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:35:21 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 61945
+2023-05-08 08:38:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:38:36 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:39:58 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:39:58 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:40:01 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:40:01 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:40:14 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:40:14 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61904
+2023-05-08 08:40:15 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /admin/auth/user/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 14, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 08:40:15 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /admin/auth/user/ HTTP/1.1" 500 62069
+2023-05-08 09:04:00 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 17, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 09:04:00 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61969
+2023-05-08 09:04:03 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 17, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 09:04:03 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61969
+2023-05-08 09:05:45 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 19, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 09:05:45 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61947
+2023-05-08 09:05:50 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 19, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 09:05:50 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61947
+2023-05-08 09:05:51 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 19, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 09:05:51 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET /news/ HTTP/1.1" 500 61988
+2023-05-08 09:30:01 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 19, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 09:30:01 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61950
+2023-05-08 09:30:39 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/utils/log.py:241 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/NewsPaper/basic/middlewares.py", line 19, in __call__
+    timezone.activate(pytz.timezone(tzname))
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'UTS'
+2023-05-08 09:30:39 [ERROR] /Users/aleksandr/PycharmProjects/ProjectD9/venv/lib/python3.11/site-packages/django/core/servers/basehttp.py:187 - "GET / HTTP/1.1" 500 61950
