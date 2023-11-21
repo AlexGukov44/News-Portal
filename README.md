@@ -1,3 +1,2 @@
 # newsPortal
-# testGit
-# nPortal
+новостной портал
